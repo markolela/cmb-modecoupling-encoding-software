@@ -1,0 +1,3 @@
+The pre-registration document (CMB_ModeCoupling_ProjectPlan_v2.9_sealed.md) was sealed prior to execution and version-controlled.
+Its integrity can be verified via the SHA256 hash provided in /preregistration/SHA256.txt.
+All statistical definitions, null constructions, and decision rules reported here correspond exactly to this sealed document.
