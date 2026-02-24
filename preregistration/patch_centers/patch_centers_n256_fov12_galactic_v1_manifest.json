@@ -1,0 +1,23 @@
+{
+  "version": "patch_centers_n256_fov12_galactic_v1",
+  "coord_frame": "galactic",
+  "fov_deg": 12.0,
+  "patch_grid": [
+    256,
+    256
+  ],
+  "mask_path": "data/external/planck_pr3/COM_Mask_CMB-common-Mask-Int_2048_R3.00.fits",
+  "mask_sha256": "23f49a3479073408b83a7f1bb2cca490d9be7f934b2e0e891524b6a1d06a5fc4",
+  "mask_center_threshold": 0.999,
+  "nside_mask": 2048,
+  "nside_candidate": 64,
+  "candidate_order": "RING, pix ascending",
+  "disc_radius_deg": 8.5,
+  "min_unmasked_fraction": 0.95,
+  "selection": "greedy_farthest_point_on_sphere",
+  "tie_break": "smallest_candidate_pix",
+  "n_centers": 256,
+  "outputs": {
+    "csv": "preregistration/patch_centers/patch_centers_n256_fov12_galactic_v1.csv"
+  }
+}

@@ -1,0 +1,1 @@
+23f49a3479073408b83a7f1bb2cca490d9be7f934b2e0e891524b6a1d06a5fc4  data/external/planck_pr3/COM_Mask_CMB-common-Mask-Int_2048_R3.00.fits
