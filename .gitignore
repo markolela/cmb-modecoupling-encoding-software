@@ -68,3 +68,7 @@ reports/
 
 # PDFs as build outputs
 paper/**/*.pdf
+
+# Repo hygiene
+/data/
+/paper/

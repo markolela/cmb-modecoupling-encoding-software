@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "description": "FFP10 attribution ensemble manifest. Interpretative only. If the listed files are not present locally, Section 5 is skipped.",
+  "n_ffp": 100,
+  "field_used": 0,
+  "entries": []
+}

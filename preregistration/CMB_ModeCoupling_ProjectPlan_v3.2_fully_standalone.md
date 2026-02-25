@@ -736,10 +736,17 @@ Assess whether separation vs 𝒩_G could arise from foreground residuals or ins
 
 This ensemble does not alter decision gates.
 
+Availability rule (binding):
+
+- Section 5 is executed only if all files referenced by preregistration/external_inputs/ffp10_manifest_v1.json
+  exist at their listed local paths.
+- If any referenced file is missing, Section 5 is skipped and no FFP artifacts are produced.
+- Skipping Section 5 has no impact on decision rules in Section 3.
+
 FFP manifest freezing rule (binding):
 
 - Exact file names and SHA256 hashes are frozen in:
-  preregistration/external_inputs/ffp10_manifest_v1.json
+  `preregistration/external_inputs/ffp10_manifest_v1.json`
 
 The manifest must list:
 
@@ -752,7 +759,7 @@ The manifest must list:
 Ensemble size and order (binding):
 
 - N_FFP = 100.
-- The FFP realization order is the manifest order in preregistration/external_inputs/ffp10_manifest_v1.json (binding).
+- The FFP realization order is the manifest order in `preregistration/external_inputs/ffp10_manifest_v1.json` (binding).
 - Use the first N_FFP entries in that manifest order (binding).
 
 Processing:
@@ -762,7 +769,7 @@ Each FFP realization undergoes the same order:
 Binding load call (FFP realizations):
 
 - For each FFP realization, define:
-  map_path is the exact local path string given by the manifest entry for that realization in preregistration/external_inputs/ffp10_manifest_v1.json.
+  map_path is the exact local path string given by the manifest entry for that realization in `preregistration/external_inputs/ffp10_manifest_v1.json`
 - The manifest entry’s SHA256 for that realization is binding and must match the computed SHA256 of the file at map_path; otherwise the run is invalid.
 - Each FFP map is loaded as:
   hp.read_map(map_path, field=0, nest=False, dtype=numpy.float64, verbose=False)
