@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "CMB-ModeCoupling-Encoding Software"
+type: software
+authors:
+  - family-names: "Lela"
+    given-names: "Marko"
+    orcid: "https://orcid.org/0009-0008-0768-5184"
+repository-code: "https://github.com/markolela/cmb-modecoupling-encoding-software"
+url: "https://github.com/markolela/cmb-modecoupling-encoding-software"
+doi: "10.5281/zenodo.18883337"
+date-released: 2026-03-06
+version: "0.1.0"
+abstract: "Preregistered, artifact-traceable pipeline for scale-dependent mode coupling diagnostics in Planck 2018 temperature maps (SMICA/NILC)."
+keywords:
+  - "Planck 2018"
+  - "CMB"
+  - "mode coupling"
+  - "preregistration"
+  - "reproducibility"
